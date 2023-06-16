@@ -1,0 +1,215 @@
+/* Global settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+
+/* Banner styling */
+#banner {
+    max-width: 100%;
+    background-color: #000;
+    margin-bottom: 1em;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Chat window styling */
+#chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 4em;
+}
+
+#chat-message-container {
+    background-color: #dee3ee;
+    width: 75vw;
+    padding: 0.5em;
+    margin-top: 3em;
+    margin-right: 1em;
+    border-radius: 10px;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    height: calc(100vh - 3em);
+}
+
+/* Chat message styling */
+#chat-message {
+    position: relative;
+    background-color: #f8f6f6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3em);
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+#chat-message p {
+    font-size: 18px;
+    color: #333;
+}
+
+#chat-message p:first-child {
+    margin-top: 0;
+}
+
+#chat-message p:last-child {
+    margin-bottom: 0;
+}
+/* Dropdown menu styling */
+#dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Learn more section styling */
+#learn-more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.bubble {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0;
+    padding: 2px;
+}
+
+/* Action icons styling */
+#action-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+#menu-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Input area styling */
+#input-area {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#new-topic-button {
+    background-color: #3b39b9;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#message-input-container {
+    flex-grow: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Send button styling */
+#send-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+#send-button img {
+    display: block;
+}
+/* Icon with message styling */
+.message-with-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 4em;
+    flex-grow: 1;
+}
+
+/* Previous prompt styling */
+.previous-prompt {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+/* Dropdown menu positioning */
+#dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
