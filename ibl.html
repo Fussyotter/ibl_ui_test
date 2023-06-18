@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>IBL Platform</title>
-    <link rel="stylesheet" type="text/css" href="globals.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-</head>
-<body>
-    <!-- Sidebar section -->
-    <div id="sidebar">
-        <img src="https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/logo_v2.png" alt="Banner" id="banner" />
-        <ul>
-            <li><a href="#" id="reset-chat"><i class="fas fa-sync"></i> Reset Chat</a></li>
-            <li><a href="#" id="bard-activity"><i class="fas fa-clock"></i> Bard Activity</a></li>
-            <li><a href="#" id="faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
-            <li><a href="#" id="updates"><i class="fas fa-bell"></i> Updates</a></li>
-            <li><a href="#" id="help"><i class="fas fa-life-ring"></i> Help</a></li>
-        </ul>
-    </div>
+	<head>
+		<title>IBL Platform</title>
+		<link rel="stylesheet" type="text/css" href="globals.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Sidebar section -->
+		<div id="sidebar">
+			<img
+				src="https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/logo_v2.png"
+				alt="Banner"
+				id="banner"
+			/>
+			<ul>
+				<li>
+					<a href="#" id="reset-chat"><i class="fas fa-sync"></i> Reset Chat</a>
+				</li>
+				<li>
+					<a href="#" id="bard-activity"
+						><i class="fas fa-clock"></i> Bard Activity</a
+					>
+				</li>
+				<li>
+					<a href="#" id="faq"><i class="fas fa-question-circle"></i> FAQ</a>
+				</li>
+				<li>
+					<a href="#" id="updates"><i class="fas fa-bell"></i> Updates</a>
+				</li>
+				<li>
+					<a href="#" id="help"><i class="fas fa-life-ring"></i> Help</a>
+				</li>
+			</ul>
+		</div>
 
-    <!-- Chat section -->
-    <div id="chat-message-container">
-        <!-- Previous prompt section -->
-        <div class="previous-prompt">
-            <img src="https://via.placeholder.com/20" alt="Message Icon" />
-            <span>What is the mood in the market today?</span>
-        </div>
+		<!-- Chat section -->
+		<div id="chat-message-container">
+			<!-- Previous prompt section -->
+			<div class="previous-prompt">
+				<i class="fas fa-user" alt="Message-icon"></i>
+
+				<span>What is the mood in the market today?</span>
+			</div>
 			<!-- Current chat message section -->
-        <div id="chat-message">
-            <div id="dropdown-menu">View other drafts</div>
-
-            <!-- Message content section -->
-            <div class="message-with-icon">
-                <img src="https://via.placeholder.com/20" alt="Message Icon" />
-					<span>
-						Sure, here is a summary of the market mood in two paragraphs:
-						<br /><br />
-						The mood in the market today is mixed. Some investors are feeling
-						bullish, while others are feeling bearish. This is due to a number
-						of factors, including the recent sell-off in the stock market, the
-						upcoming earnings season, and the rising interest rates, inflation,
-						and the war in Ukraine. <br /><br />
-						Despite these risks, there are some positive factors that could
-						support the market in the near future.
-					</span>
+			<div id="chat-message">
+				<div id="dropdown-menu">
+					View other drafts
+					<i class="fas fa-chevron-down"></i>
 				</div>
-				 <!-- Learn more links section -->
-            <div id="learn-more">
-                <span>Learn more:</span>
+
+				<!-- Message content section -->
+				<div class="message-with-icon">
+					<div class="icon-container">
+						<div class="star-container">
+							<i class="fas fa-star star-large"></i>
+							<i class="fas fa-star star-small"></i>
+						</div>
+					</div>
+					<div class="text-container">
+						<span>
+							Sure, here is a summary of the market mood in two paragraphs:
+							<br /><br />
+							The mood in the market today is mixed. Some investors are feeling
+							bullish, while others are feeling bearish. This is due to a number
+							of factors, including the recent sell-off in the stock market, the
+							upcoming earnings season, and the rising interest rates,
+							inflation, and the war in Ukraine. <br /><br />
+							Despite these risks, there are some positive factors that could
+							support the market in the near future.
+						</span>
+					</div>
+				</div>
+				<!-- Learn more links section -->
+				<div id="learn-more">
+					<span class="learn-more-title">Learn more:</span>
 					<div class="bubble">1. smallcase.com</div>
 					<div class="bubble">2. cnn.com</div>
 					<div class="bubble">3. cnn.com</div>
 					<div class="bubble">4. marketbeat.com</div>
 					<div class="bubble">+2 more</div>
 				</div>
-				    <!-- Action icons section -->
-            <div id="action-icons">
-                <img src="https://via.placeholder.com/20" alt="Thumbs up" />
-					<img src="https://via.placeholder.com/20" alt="Thumbs down" />
-					<img src="https://via.placeholder.com/20" alt="Download" />
-					<button>
-						<img src="https://via.placeholder.com/20" alt="Google logo" />Google
-						it
-					</button>
+				<!-- Action icons section -->
+				<div id="action-icons">
+					<i class="far fa-thumbs-up bordered-icon"></i>
+					<i class="far fa-thumbs-down bordered-icon"></i>
+					<i class="fas fa-download bordered-icon"></i>
+
+					<button><i class="fab fa-google"></i> Google it</button>
+					<div id="menu-dots">
+						<i class="fas fa-ellipsis-v"></i>
+					</div>
 				</div>
-				 <!-- More options section -->
-            <div id="menu-dots">...</div>
-        </div>
-			 <div id="input-area">
-            <button id="new-topic-button">
-                <img src="https://via.placeholder.com/20" alt="New Topic Icon" /> New Topic
-            </button>
-            <input type="text" id="message-input" placeholder="Type your message..." />
-            <div id="voice-to-text-icon">
-                <img src="https://via.placeholder.com/20" alt="Voice to Text Icon" />
-            </div>
-            <button id="send-button">
-                <img src="https://via.placeholder.com/20" alt="Send Icon" />
-            </button>
-        </div>
-    </div>
-    <script src="js.js"></script>
-</body>
+				<!-- More options section -->
+			</div>
+			<div id="input-area">
+				<button id="new-topic-button">
+					<i class="fas fa-broom" alt="broom"></i>
+					New Topic
+				</button>
+				<input
+					type="text"
+					id="message-input"
+					placeholder="Type your message..."
+				/>
+				<div id="voice-to-text-icon">
+					<i class="fas fa-microphone" alt="Voice to Text Icon"></i>
+				</div>
+				<button id="send-button">
+					<i class="far fa-paper-plane" alt="paper-plane"></i>
+				</button>
+			</div>
+		</div>
+		<script src="js.js"></script>
+	</body>
 </html>
